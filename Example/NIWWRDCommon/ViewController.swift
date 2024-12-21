@@ -7,13 +7,11 @@
 //
 
 import UIKit
-import NIWWRDCommon
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        MyClass.m
     }
 
     override func didReceiveMemoryWarning() {

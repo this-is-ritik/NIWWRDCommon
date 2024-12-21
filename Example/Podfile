@@ -8,15 +8,13 @@ platform :ios, $DevelopmentTarget
 install! 'cocoapods',
   :deterministic_uuids => false,
         :share_schemes_for_development_pods => true
-
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'NIWWRDCommon_Example' do
-  pod 'NIWWRDCommon', :path => '../'
-  
-  target 'NIWWRDCommon_Tests' do
-    inherit! :search_paths
-  end
+  use_frameworks! :linkage => :static
+  inherit! :search_paths
+  pod 'NIWWRDCommon', :path => './../'
 end
 
 post_install do |installer|
