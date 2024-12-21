@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import NIWWRDCommon
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Logger.log("Hello World!")
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,4 +22,3 @@ class ViewController: UIViewController {
     }
 
 }
-
