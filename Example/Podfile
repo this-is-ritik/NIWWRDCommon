@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'NIWWRDCommon_Example' do
+  pod 'NIWWRDCommon', :path => '../'
+
+  target 'NIWWRDCommon_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
