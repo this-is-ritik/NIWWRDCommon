@@ -21,3 +21,4 @@ fastlane/UnitTests/
 fastlane/lintMeterics
 Example/*.lock
 Example/NIWWRDCommon.xcworkspace/
+Example/NIWWRDCommon.xcodeproj/
