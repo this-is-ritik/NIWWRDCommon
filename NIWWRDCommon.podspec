@@ -56,9 +56,4 @@ Pod::Spec.new do |s|
             'UIViewControllerBasedStatusBarAppearance' => true,
         }
     end
-    s.script_phases = [
-    { :name => 'SwiftLint', :script =>
-        'if [[ "${CONFIGURATION}" = "Debug" && -d "${PODS_ROOT}/../../NIWWRDCommon" ]]; then ${PODS_ROOT}/SwiftLint/swiftlint --config "${PODS_ROOT}/../../NIWWRDCommon/.swiftlint.yml"; fi'
-    }
-    ]
 end
